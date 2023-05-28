@@ -9,7 +9,10 @@ function onSubmitButton(){
    
     resultDiv.textContent = name.value + lastName.value + email.value;
 
-    fetch('https://example.com/endpoint', {
+    var endpoint = "/endpoint";
+    var url = "http://localhost:8080" + endpoint;
+    console.log(url)
+    fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'text/plain'
@@ -17,11 +20,11 @@ function onSubmitButton(){
     body: resultDiv.textContent
   })
   .then(function(response) {
-    // Handle response from the server
-    console.log('Data sent successfully');
+   
+    console.log('Data sent successfully', response);
   })
   .catch(function(error) {
-    // Handle error
+
     console.log('Error:', error);
   });
 }

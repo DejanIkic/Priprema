@@ -10,3 +10,9 @@
     padding-left: 10px;
     
 }
+
+.naslov{
+    background-color: rgb(196, 229, 224);
+    display: flexbox;
+    text-align: center;
+}
