@@ -13,7 +13,7 @@ public class DemoApplication {
 
 	public static void main(String[] args) throws SQLException {
 
-		MyConnection connection = new MyConnection();
+		/*MyConnection connection = new MyConnection();
 		ResultSet resultSet = DAO.getTable();
 		while (resultSet.next()) {
 			// Retrieve data from the current row
@@ -24,7 +24,7 @@ public class DemoApplication {
 			System.out.println("ID: " + id);
 			System.out.println("Name: " + name);
 		}
-
+*/
 		SpringApplication.run(DemoApplication.class, args);
 	}
 

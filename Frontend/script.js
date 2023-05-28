@@ -10,21 +10,26 @@ function onSubmitButton(){
     resultDiv.textContent = name.value + lastName.value + email.value;
 
     var endpoint = "/endpoint";
-    var url = "http://localhost:8080" + endpoint;
-    console.log(url)
-    fetch(url, {
+    var url = "http://localhost:8080/endpoint" ;
+    fetch("http://localhost:8080/endpoint", {
     method: 'POST',
     headers: {
       'Content-Type': 'text/plain'
     },
-    body: resultDiv.textContent
+    mode: 'no-cors',
+    body: "neki tekst"
   })
-  .then(function(response) {
-   
-    console.log('Data sent successfully', response);
+  .then(function (response) {
+    console.log(response)
+    
+  })
+  .then(function (data) {
+   // console.log('Response:', data);
+    // Use the response data as needed
   })
   .catch(function(error) {
 
     console.log('Error:', error);
   });
 }
+
