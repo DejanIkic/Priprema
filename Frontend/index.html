@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h1>Naslov</h1>
+    </div>
+    <div class="mainDiv">
+        
+        <div class="mainField">
+            <div  style="width: 60px;">Ime</div>
+            <div><input type="text" name="name" id="firstNameCheckbox" placeholder="Ime"></div>
+        </div>
+
+        <div class="mainField">
+            <div style="width: 60px;">Prezime</div>
+            <div><input type="text" name="name" id="lastNameCheckbox" placeholder="prezime"></div>
+        </div>
+
+        <div class="mainField">
+            <div style="width: 60px;">Email</div>
+            <div><input type="text" name="name" id="emailCheckbox" placeholder="e-mail"></div>
+        </div>
+        <div style=" margin-right: 10;">
+            <button 
+            style="padding: 10px 30px; margin-top: 10px;"
+            onclick="onSubmitButton()">Posalji</button>
+        </div>
+
+    </div>
+    <div style="padding: 15px;display: flex; background: rgb(201, 231, 245);">
+        <div style="padding: 7px;background-color: #fff;">Rezultat: </div>
+        <div id="resultDiv" style="padding: 7px;background-color: #fff;"> ovdje ce biti ispisan rezultat</div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>

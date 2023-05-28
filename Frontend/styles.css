@@ -1,0 +1,12 @@
+.mainDiv{
+    background-color: rgb(226, 240, 241);
+    
+}
+
+.mainField{
+    align-content: center;
+    display: flex;
+    width: 300px;
+    padding-left: 10px;
+    
+}
